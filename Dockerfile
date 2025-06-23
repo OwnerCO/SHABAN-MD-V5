@@ -8,7 +8,6 @@ USER node
 RUN git clone https://github.com/OwnerCO/SHABAN-MD-V5.git /home/node/SHABAN-MD-V5
 WORKDIR /home/node/SHABAN-MD-V5
 RUN chmod -R 777 /home/node/SHABAN-MD-V5/
-RUN yarn install --network-concurrency 1
 EXPOSE 7860
 ENV NODE_ENV=production
 CMD ["npm", "start"]
