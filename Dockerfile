@@ -6,6 +6,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 USER node
 RUN git clone https://github.com/OwnerCO/SHABAN-MD-V5.git /home/node/SHABAN-MD-V5
+RUN npm install pm2
 WORKDIR /home/node/SHABAN-MD-V5
 RUN chmod -R 777 /home/node/SHABAN-MD-V5/
 EXPOSE 7860
